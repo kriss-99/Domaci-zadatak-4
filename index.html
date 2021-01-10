@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocetna</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+          <p id="cp" class="mt-5">💌Ukoliko ste ove godine bili dobri, pošaljite Deda Mrazu svoju želju!💌 </p>
+    
+          <form action="sacuvaj_zelju.php" method="POST" class="mt-5">
+              <table>
+                  <tr>
+                      <td>Ime:</td>
+                      <td><input class="form-control" type="text" name="ime" placeholder="Unesite ime..." ></td>
+                      
+                    </tr>
+           
+                    <tr>
+                        <td>Prezime:</td>
+                        <td><input class="form-control" type="text" name="prezime" id="prez" placeholder="Unesite prezime..."></td>
+                    </tr>
+                    <tr>
+                        <td>Grad:</td>
+                        <td>
+                            <select class="form-control form-select"name="gradovi" id="gr">
+                                <optgroup label="Sjever">
+                                    <option value="Pljevlja">Pljevlja</option>
+                                    <option value="Žabljak">Žabljak</option>
+                                    <option value="Bijelo Polje">Bijelo Polje</option>
+                                    <option value="Berane">Berane</option>
+                                    <option value="Andrijevica">Andrijevica</option>
+                                    <option value="Rozaje">Rozaje</option>
+                                </optgroup>
+                                <optgroup label="Centar">
+                                    <option value="Podgorica" selected>Podgorica</option>
+                                    <option value="Nikšic">Nikšic</option>
+                                    <option value="Cetinje">Cetinje</option>
+                                </optgroup>
+                                <optgroup label="Jug">
+                                    <option value="Budva">Budva</option>
+                                    <option value="Tivat">Tivat</option>
+                                    <option value="Herceg Novi">Herceg Novi</option>
+                                    <option value="Bar">Bar</option>
+                                    <option value="Ulcinj">Ulcinj</option>
+                                    <option value="Kotor">Kotor</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Da li ste bili dobri?</td>
+                            <td> <input class="size" type="checkbox" name="dane[]"  value="Da">
+                                Da
+                                <input class="size" type="checkbox" name="dane[]"  value="Ne">Ne
+                            </td>
+                          
+                        
+                    </tr>
+                    <tr><td></td></tr>
+                    <tr>
+                        <td>Ispod napišite želju Deda Mrazu:</td>
+                    </tr>
+               
+                    <tr>
+                        <td colspan="2">
+                            <textarea id="txt" class="form-control velicina" name="zelje" cols="50" rows="5" placeholder="Unesite želju..."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button id="posalji" class="btn btn-danger btn-lg mt-3 ">Pošaljite želju</button></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <audio controls class="mt-5">
+                          <source src="pjesma.mp3" type="audio/mpeg">
+                        </audio>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Dok smišljate želju uživajte u muzici..💝</td>
+                    </tr>
+              </table>
+          </form>
+           
+              
+</body>
+</html>

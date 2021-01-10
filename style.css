@@ -1,0 +1,19 @@
+body{
+    background-image: url("dm.jpg");
+    font-family: "Equity";
+    color: azure;
+    font-size: 20px;
+}
+
+#cp{
+    font-size: 30px;
+    text-align: left;
+    text-decoration: seashell;
+}
+
+.size{
+width: 30px;
+height: 20px;
+
+}
+
